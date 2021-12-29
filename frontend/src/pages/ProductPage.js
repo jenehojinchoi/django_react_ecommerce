@@ -80,7 +80,7 @@ function ProductPage({ match, history }) {
                                                     Qty
                                                 </Col>
                                                 <Col xs='auto' className='my-1'>
-                                                   <Form.Control
+                                                    <Form.Control
                                                         as='select'
                                                         value={qty}
                                                         onChange={(e) => setQty(e.target.value)}
@@ -92,7 +92,7 @@ function ProductPage({ match, history }) {
                                                                 </option>
                                                             ))
                                                         }
-                                                   </Form.Control> 
+                                                    </Form.Control> 
                                                 </Col>
                                             </Row>
                                         </ListGroup.Item>
