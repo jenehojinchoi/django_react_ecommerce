@@ -68,6 +68,8 @@ def updateUserProfile(request):
 @api_view(['GET'])
 @permission_classes([IsAuthenticated])
 def getUserProfile(request):
+    print("==========================")
+    print('get')
     user = request.user
     serializer = UserSerializer(user, many=False)
     return Response(serializer.data)
